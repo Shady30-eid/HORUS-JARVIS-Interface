@@ -1,0 +1,1 @@
+- [JARVIS reference fidelity](jarvis-reference-fidelity.md) — match the supplied screen's eye symbol, typography, room, and panel geometry rather than a generic sci-fi interpretation.

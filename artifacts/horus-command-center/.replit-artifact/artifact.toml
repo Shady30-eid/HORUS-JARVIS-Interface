@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "HORUS AI Command Center"
+description = "A cinematic AI command-center interface inspired by the supplied JARVIS reference image, with a holographic Eye of Horus, live task panels, and an interactive command bar."
+version = "1.0.0"
+id = "artifacts/horus-command-center"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20748
+
+[services.development]
+run = "pnpm --filter @workspace/horus-command-center run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/horus-command-center", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/horus-command-center/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20748"
+BASE_PATH = "/"
