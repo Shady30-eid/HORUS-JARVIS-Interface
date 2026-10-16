@@ -1,0 +1,25 @@
+{
+  "id": "/",
+  "name": "HORUS AI Command Center",
+  "short_name": "HORUS",
+  "description": "HORUS AI command center for research, tasks, and live results.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#031118",
+  "theme_color": "#031118",
+  "icons": [
+    {
+      "src": "/horus-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/horus-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

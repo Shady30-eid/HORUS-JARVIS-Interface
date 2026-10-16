@@ -1,0 +1,24 @@
+kind = "mobile"
+previewPath = "/mobile/"
+title = "HORUS Mobile"
+description = "A native iOS and Android companion for the HORUS AI command center, carrying its Eye of Horus identity, research panels, task progress, and command composer into a touch-first mobile layout."
+version = "1.0.0"
+id = "artifacts/horus-mobile"
+router = "expo-domain"
+
+[[services]]
+name = "expo"
+ensurePreviewReachable = "/status"
+paths = [ "/mobile/" ]
+localPort = 24896
+
+[services.development]
+run = "pnpm --filter @workspace/horus-mobile run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/horus-mobile", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/horus-mobile", "run", "serve" ]
+
+[services.env]
+PORT = "24896"
+BASE_PATH = "/mobile/"
