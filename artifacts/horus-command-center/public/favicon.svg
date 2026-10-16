@@ -1,3 +1,24 @@
 <svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="180" height="180" rx="36" fill="#FF3C00"/>
+  <defs>
+    <radialGradient id="halo" cx="50%" cy="48%" r="58%">
+      <stop stop-color="#0D4B5A"/>
+      <stop offset="1" stop-color="#031118"/>
+    </radialGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect x="3" y="3" width="174" height="174" rx="34" fill="url(#halo)" stroke="#1B7585" stroke-width="3"/>
+  <g stroke="#72F4FF" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+    <path d="M35 70C52 47 72 39 90 43C109 39 129 47 146 70" stroke-width="8"/>
+    <path d="M29 86C47 66 69 58 90 62C111 58 133 66 151 86C132 102 111 110 90 108C69 110 48 102 29 86Z" fill="#0A3D4B" stroke-width="7"/>
+    <circle cx="90" cy="84" r="17" fill="#36DDF0" stroke="#C9FFFF" stroke-width="5"/>
+    <circle cx="90" cy="84" r="6" fill="#F4FFFF" stroke="none"/>
+    <path d="M30 86C19 95 18 107 26 114C34 122 49 117 50 108C51 102 47 98 42 99" stroke-width="7"/>
+    <path d="M111 105C129 117 131 134 118 151L114 128" stroke-width="8"/>
+  </g>
 </svg>

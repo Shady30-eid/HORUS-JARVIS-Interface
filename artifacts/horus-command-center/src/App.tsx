@@ -103,7 +103,7 @@ function App() {
       <RoomArtwork />
       <div className="scanlines" />
       <header className="topbar">
-        <div className="brand">JARVIS<small>AI ASSISTANT</small></div>
+        <div className="brand">HORUS<small>AI ASSISTANT</small></div>
         <div className="sys-indicator" data-testid="status-system"><i />SYSTEM ONLINE</div>
         <div className="stages"><span>ANALYZE</span><b>/</b><span>THINK</span><b>/</b><span>EXECUTE</span><b>/</b><span className="lit">DELIVER</span></div>
         <div className="top-right">
